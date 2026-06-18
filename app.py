@@ -310,6 +310,29 @@ aptitude = st.sidebar.slider(
     help="Your aptitude test score (0 - 100)"
 )
 
+communication = st.sidebar.slider(
+    "Communication Skills",
+    min_value=0,
+    max_value=100,
+    value=50,
+    step=1
+)
+
+coding = st.sidebar.slider(
+    "Coding Skills",
+    min_value=0,
+    max_value=100,
+    value=50,
+    step=1
+)
+
+projects = st.sidebar.number_input(
+    "Projects Completed",
+    min_value=0,
+    max_value=20,
+    value=2
+)
+
 # Predict Button
 col1, col2 = st.sidebar.columns(2)
 with col1:
@@ -329,7 +352,7 @@ if reset_button:
 # ==================== PREDICTION LOGIC ====================
 if predict_button:
     # Create feature array from user inputs
-    features = np.array([[cgpa, internship, aptitude]])
+    features = np.array([[cgpa, internship, aptitude, communication, coding, projects]])
     
     # Get prediction from model
     prediction = model.predict(features)[0]

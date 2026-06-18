@@ -10,7 +10,14 @@ data = pd.read_csv("dataset.csv")
 data["Placed"] = data["Placed"].map({"Yes": 1, "No": 0})
 
 # Features and Target
-X = data[["CGPA", "Internship", "Aptitude"]]
+X = data[[
+    "CGPA",
+    "Internship",
+    "Aptitude",
+    "Communication",
+    "Coding",
+    "Projects"
+]]
 y = data["Placed"]
 
 # Split data
@@ -20,9 +27,13 @@ X_train, X_test, y_train, y_test = train_test_split(
 
 # Train model
 model = RandomForestClassifier(
-    n_estimators=200,
+    n_estimators=500,
+    max_depth=15,
+    min_samples_split=5,
+    min_samples_leaf=2,
     random_state=42
 )
+
 model.fit(X_train, y_train)
 
 # Accuracy
@@ -31,7 +42,7 @@ print("Model Accuracy:", accuracy)
 joblib.dump(accuracy, "accuracy.pkl")
 
 # Predict new student
-prediction = model.predict([[8.2, 1, 80]])
+prediction = model.predict([[8.2, 1, 80, 75, 85, 4]])
 
 if prediction[0] == 1:
     print("Student is likely to be PLACED")
