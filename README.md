@@ -34,6 +34,23 @@ pip install -r requirements.txt
 
 streamlit run app.py
 
-## 👨‍💻 Author
+## � Environment Configuration
+
+Create a `.env` file in the project folder with:
+
+```text
+EMAIL_ADDRESS=yourgmail@gmail.com
+EMAIL_PASSWORD=your_gmail_app_password
+```
+
+Use an App Password if you have 2-Step Verification enabled for your Gmail account.
+
+Optionally set your app URL (used in email links):
+
+```text
+APP_URL=http://localhost:8501
+```
+
+## �👨‍💻 Author
 
 Nawaj Hussain Choudhury

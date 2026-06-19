@@ -1,0 +1,29 @@
+{
+  "nawaj2003@gmail.com": {
+    "id": "52ffdc1e-a0fb-4f4f-80e0-2bf20865f966",
+    "full_name": "Nawaj Choudhury",
+    "college": "meghnad saha institute of technology",
+    "email": "nawaj2003@gmail.com",
+    "mobile": "9304781058",
+    "password": "$2b$12$L1vArDW7GgYYA02E2fDDmeVr1u/9jAwFnhuRXnFZFT67HxQQbnNIa",
+    "branch": "AIML",
+    "cgpa": 7.0,
+    "grad_year": 2027,
+    "created_at": 1781810232.4135695,
+    "reset_required": false,
+    "reset_token": "72-Q-8OcjYew6RRrHRMV3EdULDQ4kKT9",
+    "reset_expiry": 1781855208,
+    "verified": true
+  },
+  "rajsinha.work62@gmail.com": {
+    "email": "rajsinha.work62@gmail.com",
+    "name": "raj",
+    "college": "meghnad saha institute of technology",
+    "branch": "cse",
+    "grad_year": 2027,
+    "password": "$2b$12$LhaqoqECtBJ7H69HqIKIrOlBp4ncpYoCccsgESAVUGX1P6LkEFAlK",
+    "reset_required": false,
+    "verified": true,
+    "created_at": 1781857038.5902479
+  }
+}
